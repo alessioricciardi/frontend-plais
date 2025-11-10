@@ -236,15 +236,80 @@ frontend-plais/
 
 Reusable Vue components organized by feature:
 
-- **Admin/** – Components for the admin panel and user management.
-- **Event/** – Components for events display and editing.
-- **ExecutiveBoard/** – Components for executive board display and editing.
-- **Home/** – Homepage sections with CMS: image carousel, PLAIS description, memorial for Prof. Stanisław Wrycza - founder of PLAIS and achievements.
-- **Member/** – Member table and editing components.
-- **Resources/** – Resource categories, links, and CMS.
-- **Navbar/** – Navigation bar and slide-over menu for mobile devices.
-- **Tiptap/** – Rich-text editor components for CMS.
-- **SiteFooter.vue** – Footer used on all pages.
+### **Admin/**
+Components related to the admin panel and user management.
+- **Panel.vue** – Main view of the admin management dashboard.  
+- **User/Editor.vue** – Form for editing user data.
+
+### **Bulletin/**
+Components for managing the PLAIS bulletin.
+- **Article.vue** – Displays a single bulletin article.  
+- **ArticleEditor.vue** – CMS editor for creating or updating bulletin articles.
+
+### **Event/**
+Components used to display and manage events and event groups.
+- **AddGroupOrEvent.vue** – Form or modal for adding a new event or event group.  
+- **Card.vue** – Compact event card displaying title, date, and description.  
+- **Editor.vue** – Main event editor for titles, descriptions, and media content.  
+- **Group/Display.vue** – Displays the details of an event group.  
+- **Group/Editor.vue** – Editor for event group details (name, description, related events).
+
+### **ExecutiveBoard/**
+Components for displaying and editing executive board members and cadences.
+- **AddCadenceOrMember.vue** – Form for adding a new board cadence or member.  
+- **Cadence/Editor.vue** – Editor for cadence details.  
+- **Cadence/Separator.vue** – Visual divider between cadences in the layout.  
+- **Member/Editor.vue** – Editor for member data.  
+- **Member/Member.vue** – Displays an executive board member).
+
+### **Home/**
+Components related to the homepage, news, and CMS-managed sections.
+- **Achievement/**
+  - **Achievement.vue** – Displays a single achievement item.  
+  - **BigImage.vue** – Fullscreen image expander for the achievements section.  
+  - **Carousel.vue** – Image carousel for single achievement.  
+  - **Editor.vue** – CMS editor for achievements.  
+- **Carousel.vue** – Main homepage image slider.  
+- **News.vue** – News feed displaying recent PLAIS updates.  
+- **TextEdit.vue** – CMS text editor for homepage sections (e.g., PLAIS description, memorial for Prof. Stanisław Wrycza).
+
+### **Login/**
+Components related to user authentication.
+- **Form.vue** – Login form for user authentication.
+
+### **Member/**
+Components related to displaying and editing PLAIS members.
+- **Editor.vue** – Form for editing member details.  
+- **Switch.vue** – Toggle component for switching between views or modes (e.g., current vs. founding members).  
+- **Table.vue** – Table listing all members with their details.
+
+### **Modal/**
+Modal component used across the app for confirmation for delete actions
+- **Confirm.vue** – Confirmation dialog for delete action.
+
+### **Navbar/**
+Navigation bar components for desktop and mobile.
+- **Navbar.vue** – Main navigation bar with links.  
+- **Button.vue** – Reusable button component used in the navbar.  
+- **BecomeMember.vue** – Call-to-action component leading to the membership form.  
+- **Slideover.vue** – Mobile slide-over navigation menu.
+
+### **Resources/**
+Components managing external resources and categories.
+- **Panel.vue** – Resource management panel (categories).  
+- **Link.vue** – Displays a single resource link.  
+- **CategoryEditor.vue** – CMS editor for resource categories.  
+- **Group/Add.vue** – Form for adding a new resource group.  
+- **Group/Editor.vue** – Editor for resource group details.
+
+### **Tiptap/**
+Rich-text editor components integrated with Tiptap.
+- **Editor.vue** – Main Tiptap editor instance.  
+- **Button.vue** – Toolbar button for formatting actions (bold, italic, etc.).  
+- **ImageView.vue** – Image preview and upload component inside the editor.
+
+### **SiteFooter.vue**
+Global footer displayed on all pages (contact info, social links, copyright).
 
 # Composables
 
